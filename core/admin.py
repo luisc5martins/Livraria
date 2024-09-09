@@ -7,6 +7,7 @@ from core.models import (
     Categoria,
     Compra,
     Editora,
+    ItensCompra,
     Livro,
     User,
 )
@@ -83,3 +84,4 @@ class UserAdmin(BaseUserAdmin):
     )
 
     admin.site.register(Compra)
+    admin.site.register(ItensCompra)
