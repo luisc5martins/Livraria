@@ -2,7 +2,14 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils.translation import gettext_lazy as _
 from core import models
-from core.models import Autor, Categoria, Editora, Livro, User
+from core.models import (
+    Autor, 
+    Categoria,
+    Compra,
+    Editora,
+    Livro,
+    User,
+)
 
 @admin.register(Autor)
 class AutorAdmin(admin.ModelAdmin):
@@ -74,3 +81,5 @@ class UserAdmin(BaseUserAdmin):
             },
         ),
     )
+
+    admin.site.register(Compra)
