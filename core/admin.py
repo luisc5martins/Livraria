@@ -48,7 +48,7 @@ class LivroAdmin(admin.ModelAdmin):
 
 class ItensCompraInline(admin.TabularInline):
     model = ItensCompra
-    extra = 1  # Quantidade de itens adicionais
+    extra = 1
 
 
 @admin.register(Compra)
